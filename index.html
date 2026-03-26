@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/index.sass" />
+    <script src="src/scripts/app.js" type="module" defer></script>
+    <title>testovoe</title>
+  </head>
+  <body>
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal" id="contactModal">
+        <button class="modal__close" id="modalClose">
+          <svg width="24" height="24" aria-hidden="true">
+            <use xlink:href="icons/sprite.svg#cros"></use>
+          </svg>
+        </button>
+        <h4 class="modal__title">SEND US MESSAGE</h4>
+        <form action="" id="form">
+          <div class="input-group">
+            <label class="input__label" for="fullName">Full Name</label>
+            <input
+              class="input"
+              id="fullName"
+              name="fullName"
+              type="text"
+              placeholder="Your Name"
+            />
+            <span class="input__error" id="fullNameError"></span>
+          </div>
+
+          <div class="input-group">
+            <label class="input__label" for="email">Email</label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Your Email"
+            />
+            <span class="input__error" id="emailError"></span>
+          </div>
+
+          <div class="input-group">
+            <label class="input__label" for="message">Message</label>
+            <textarea
+              class="input"
+              id="message"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn modal__btn">SUBMIT</button>
+        </form>
+      </div>
+      <!-- Конец модального окна -->
+    </div>
+    <header class="header">
+      <!-- Для SVG есть какой то тег специальный -->
+      <div class="header__logo">
+        <svg width="48" height="48" aria-hidden="true">
+          <use xlink:href="icons/sprite.svg#logo-header"></use>
+        </svg>
+      </div>
+      <div class="header__menu_btn">
+        <button>
+          <svg width="32" height="32" viewBox="0 0 32 32">
+            <use href="icons/sprite.svg#btn-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__bg-gradient"></div>
+        <div class="hero__wrapper container">
+          <div class="hero__content">
+            <h1 class="hero__title">New Automation Tool for Your Home</h1>
+            <p class="hero__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              tristique vulputate ultrices ut mauris tellus at. Posuere
+              sollicitudin odio tellus elit.
+            </p>
+            <button class="btn hero__btn">See Our Project</button>
+          </div>
+          <img
+            class="hero__image"
+            src="./img/illustration.png"
+            alt="decor image"
+          />
+        </div>
+      </section>
+
+      <section class="services container">
+        <h2 class="services__title">
+          What we do to help our client grow in digital era,
+        </h2>
+
+        <div class="services__grid">
+          <div class="card services__grid-item">
+            <div class="card__img">
+              <img src="./img/1.png" alt="#" />
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">
+                Make Your business To Be Better Famous In Internet
+              </h4>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="card__link" href="#">
+                Learn more
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="icons/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card services__grid-item">
+            <div class="card__img">
+              <img src="./img/2.png" alt="#" />
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">
+                Make Your business To Be Better Famous In Internet
+              </h4>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="card__link" href="#">
+                Learn more
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="icons/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card services__grid-item">
+            <div class="card__img card__img-three">
+              <img src="./img/3.png" alt="#" />
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">
+                Make Your business To Be Better Famous In Internet
+              </h4>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="card__link" href="#">
+                Learn more
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="icons/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="clients__wrapper container">
+          <div class="clients__header">
+            <h2 class="clients__header_title">Our Beloved Client</h2>
+            <p class="clients__header_description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="clients__list">
+            <div class="clients__list_item">
+              <a href="#">LOGO CLIENT 1</a>
+            </div>
+            <div class="clients__list_item">
+              <a href="#">LOGO CLIENT 2</a>
+            </div>
+            <div class="clients__list_item">
+              <a href="#">LOGO CLIENT 3</a>
+            </div>
+            <div class="clients__list_item">
+              <a href="#">LOGO CLIENT 4</a>
+            </div>
+
+            <div class="clients__list_item">
+              <a href="#">LOGO CLIENT 5</a>
+            </div>
+            <div class="clients__list_item">
+              <a href="#">LOGO CLIENT 6</a>
+            </div>
+            <div class="clients__list_item">
+              <a href="#">LOGO CLIENT 7</a>
+            </div>
+            <div class="clients__list_item accent">
+              <a href="#">More Clients</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__top">
+              <div class="footer__cta">
+                <h2 class="footer__cta-title">
+                  Intersted to woek with our team?
+                </h2>
+                <p class="footer__cta-description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+              <button class="btn footer__btn">Let’s Talk</button>
+            </div>
+          </div>
+
+          <div class="footer__divider"></div>
+
+          <div class="container">
+            <div class="footer__bottom">
+              <div class="footer__info">
+                <div class="footer__logo-section">
+                  <svg width="48" height="48" aria-hidden="true">
+                    <use href="icons/sprite.svg#logo-footer"></use>
+                  </svg>
+                  <h3 class="footer__company-name">Afrianska</h3>
+                </div>
+                <ul class="footer__contact-list">
+                  <li class="footer__contact-item">
+                    <span class="footer__contact-label">A.</span>
+                    <a href="#"
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit.</a
+                    >
+                  </li>
+                  <li class="footer__contact-item">
+                    <span class="footer__contact-label">T.</span>
+                    <a href="#">+62-812-7313-4321</a>
+                  </li>
+                  <li class="footer__contact-item">
+                    <span class="footer__contact-label">E.</span>
+                    <a href="#">hello.afrian@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__links">
+                <div class="footer__link-group">
+                  <h4 class="footer__link-title">About US</h4>
+                  <ul class="footer__link-list">
+                    <li><a href="#" class="footer__link link">About</a></li>
+                    <li>
+                      <a href="#" class="footer__link link">What We Do</a>
+                    </li>
+                    <li><a href="#" class="footer__link link">Project</a></li>
+                    <li>
+                      <a href="#" class="footer__link">
+                        linkHow It Work With Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__link-group">
+                  <h4 class="footer__link-title">Fillow US</h4>
+                  <ul class="footer__link-list">
+                    <li><a href="#" class="footer__link link">Instagram</a></li>
+                    <li><a href="#" class="footer__link link">Facebook</a></li>
+                    <li><a href="#" class="footer__link link">LinkedIn</a></li>
+                    <li><a href="#" class="footer__link link">Youtube</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="footer__copyright">
+              2019 © Afrianska. All rights reserved.
+            </p>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

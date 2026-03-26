@@ -1,0 +1,89 @@
+.footer
+    background-color: var(--color-blue-1)
+    border-radius: 0 200px 0 0
+
+    padding-top: 91px
+    padding-bottom: 64px
+
+    @media (max-width: 992px)
+        border-radius: 0 100px 0 0
+        padding-top: 48px
+
+    &__top
+        display: flex
+        align-items: center
+        gap: 180px
+        @media (max-width: 992px)
+            gap: 80px
+
+        @media (max-width: 768px)
+            flex-direction: column
+            align-items: flex-start
+            gap: 30px
+
+    &__cta
+        width: 460px
+        @media (max-width: 768px)
+            width: 100%
+
+    &__cta-title
+        margin-bottom: 32px
+        color: var(--color-white)
+
+    &__cta-description
+        color: var(--color-gray)
+
+    &__divider
+        height: 1px
+        width: 68%
+        background-color: white
+        opacity: 40%
+        margin: 96px 0
+        @media (max-width: 992px)
+            margin: 48px 0
+
+    &__bottom
+        color: var(--color-white)
+        display: flex
+        gap: 100px
+        margin-bottom: 64px
+        @media (max-width: 768px)
+            flex-direction: column
+
+    &__logo-section
+        // Стили для логотипа
+        display: flex
+        gap: 15px
+        align-items: center
+        margin-bottom: 31px
+
+    &__contact-list
+        // Стили для списка контактов
+        display: flex
+        flex-direction: column
+        gap: 24px
+        width: 299px
+
+    &__contact-item
+        // Стили для элемента контакта
+        display: flex
+        gap: 16px
+
+    &__links
+        // Стили для группы ссылок
+        display: flex
+        gap: 70px
+
+    &__link-title
+        // Стили для заголовка группы ссылок
+        margin-bottom: 32px
+
+    &__link-list
+        // Стили для списка ссылок
+        display: flex
+        flex-direction: column
+        gap: 16px
+
+    &__copyright
+        // Стили для копирайта
+        color: var(--color-gray)

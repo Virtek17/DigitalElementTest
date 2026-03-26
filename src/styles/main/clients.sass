@@ -1,0 +1,76 @@
+.clients
+    background-color: var(--color-blue-4)
+    padding-top: 96px
+    border-radius: 200px 0 0 0
+    @media (max-width: 992px)
+        border-radius: 100px 0 0 0
+        padding-top: 48px
+
+    &__wrapper
+        margin-bottom: 125px
+        @media (max-width: 992px)
+            margin-bottom: 60px
+
+    &__header
+        display: flex
+        gap: 97px
+        margin-bottom: 111px
+        padding-right: 82px
+        color: var(--color-white)
+        @media (max-width: 768px)
+            padding-right: 0
+            flex-direction: column
+            gap: 20px
+            margin-bottom: 40px
+
+        &_title
+            flex-shrink: 1
+
+        &_description
+            flex-shrink: 2
+
+    &__list
+
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+
+        @media (max-width: 768px)
+            grid-template-columns: repeat(2,1fr)
+
+        @media (max-width: 580px)
+            display: flex
+            flex-direction: column
+
+        &_item
+            padding: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: var(--color-white)
+            font-size: 20px
+            font-weight: 600
+            transition: all 0.3s ease
+
+            &:hover
+                background-color: var(--color-blue-1-op)
+
+            @media (max-width: 768px)
+                padding: 40px
+
+            @media (min-width: 768px)
+                &:not(:nth-child(4))
+                    border-right: 1px solid var(--color-white)
+                &:not(:nth-child(8))
+                    border-right: 1px solid var(--color-white)
+
+                &:nth-child(1)
+                    border-bottom: 1px solid var(--color-white)
+                &:nth-child(2)
+                    border-bottom: 1px solid var(--color-white)
+                &:nth-child(3)
+                    border-bottom: 1px solid var(--color-white)
+                &:nth-child(4)
+                    border-bottom: 1px solid var(--color-white)
+
+            @media (max-width: 580px)
+                padding: 60px

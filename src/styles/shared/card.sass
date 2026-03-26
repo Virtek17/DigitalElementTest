@@ -1,0 +1,66 @@
+.card
+    padding: 48px
+    border-radius: 10px
+    background-color: var(--color-white)
+    box-shadow: 5px 20px 50px 0px rgb(16, 112, 177, 0.2)
+    width: 380px
+    @media (max-width: 992px)
+        padding: 36px
+    @media (max-width: 880px)
+        display: flex
+        width: 100%
+        gap: 10px
+        padding: 24px
+
+    @media (max-width: 580px)
+        flex-direction: column
+
+    &__content
+        flex-shrink: 2
+        @media (max-width: 880px)
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            gap: 8px
+
+    // TODO: поправить размеры
+    &__img
+        align-self: center
+        margin-bottom: 56px
+        flex-shrink: 1
+        & img
+            object-fit: cover
+            width: 100%
+        @media (max-width: 880px)
+            margin: 0
+            width: 300px
+        @media (max-width: 580px)
+            width: 150px
+            margin-bottom: 20px
+
+        &-three
+            position: relative
+            top: -80px
+            margin-bottom: 0px
+        @media (max-width: 880px)
+            top: 0
+
+    &__title
+        color: #1F3F68
+        margin-bottom: 16px
+        @media (max-width: 880px)
+            margin: 0
+
+    &__description
+        color: #798CA4
+
+    &__link
+        display: flex
+        gap: 24px
+        align-items: center
+        color: var(--color-blue-4)
+        margin-top: 32px
+        transition: all 0.3s ease
+
+        &:hover
+            color: var(--color-blue-1)

@@ -1,0 +1,26 @@
+.input
+    border-radius: 10px
+    border: 1px solid rgb(53, 110, 173, 0.4)
+    padding: 21px 43px
+    transition: border-color 0.2s ease
+
+    &::placeholder
+        color: rgb(31, 63, 104, 0.2)
+
+    &-group
+        display: flex
+        flex-direction: column
+        gap: 8px
+        margin-bottom: 32px
+
+    &__label
+        color: rgb(31, 63, 104, 0.8)
+
+    &__error
+        color: #e74c3c
+        font-size: 12px
+        margin-top: -4px
+
+    &.error
+        border-color: #e74c3c
+        background-color: rgba(231, 76, 60, 0.05)

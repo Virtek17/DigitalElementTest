@@ -1,0 +1,48 @@
+.hero
+    position: relative
+    margin-top: 101px
+    @media(max-width: 992px)
+        margin-top: 50px
+
+    &__bg-gradient
+        background: #98C3E8
+        background: linear-gradient(0deg,rgba(152, 195, 232, 0.2) 0%, rgba(152, 195, 232, 0) 28%)
+        position: absolute
+        width: 100%
+        height: 100vh
+        z-index: 999
+        bottom: 0
+        pointer-events: none
+
+    &__content
+        padding-bottom: 190px
+        max-width: 510px
+        @media (max-width: 768px)
+            padding-bottom: 80px
+
+    &__title
+        margin-bottom: 32px
+        color: var(--color-blue-1)
+
+    &__description
+        margin-bottom: 71px
+        padding-right: 84px
+        color: var(--color-blue-1)
+
+    &__wrapper
+        position: relative
+
+    &__image
+        position: absolute
+        top: -90px
+        right: -187px
+        z-index: 1
+        @media (max-width: 1320px)
+            width: 50%
+            right: -3%
+        @media (max-width: 1024px)
+            right: 0
+            top: auto
+            bottom: 20%
+        @media (max-width: 768px)
+            display: none
