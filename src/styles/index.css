@@ -1,4 +1,4 @@
-@import url("./base/reset.css");
+@import url("reset.css");
 :root {
   --color-white: #ffffff;
   --color-blue-1: #1f3f68;
