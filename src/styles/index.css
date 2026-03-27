@@ -405,8 +405,8 @@ p {
 @font-face {
   font-family: "Galien";
   src:
-    url("public/fonts/Galien/Galien-Bold.woff2") format("woff2"),
-    url("/fonts/Galien/Galien-Bold.woff") format("woff");
+    url("../../public/fonts/Galien/Galien-Bold.woff2") format("woff2"),
+    url("../../public/fonts/Galien/Galien-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -414,8 +414,8 @@ p {
 @font-face {
   font-family: "Gilroy";
   src:
-    url("public/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),
-    url("/fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+    url("../../public/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),
+    url("../../public/fonts/Gilroy/Gilroy-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
